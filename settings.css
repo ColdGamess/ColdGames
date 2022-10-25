@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --text-color: #000000;
+    --settings-bg: #ffffff;
+    --toggle-switch: #000000;
+}
+
+body.dark {
+    --text-color: #ffffff;
+    --settings-bg: #000000;
+    --toggle-switch: #ffffff;
+}
+
+.settings-cont {
+    height: 300px;
+    width: 500px;
+    background-color: var(--settings-bg);
+    box-shadow: 2px 2px 2px 2px #000000;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    color: var(--text-color);
+}
+
+
+.settings-cont .settings-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.settings-cont .close-settings {
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.settings-cont .settings-options {
+    font-family: 'Poppins', sans-serif;
+}
+
+.settings-cont .settings-options .option1 h2 {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+
+.settings-cont .settings-options .option2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;   
+}
+
+.settings-cont .settings-options .option3 {
+    position: absolute;
+    top: 70%; 
+    left: 5%;
+}

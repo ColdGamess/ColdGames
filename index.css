@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+:root {
+    --text-color: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/************ Body ************/
+body.dark {
+    background-color: #000000;
+    --text-color: #ffffff;
+}
+/************ Body End ************/
+
+.header {
+    height: 80px;
+    width: 100%;
+    background: #635858;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .contact {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    transform: translateX(-5%);
+    font-size: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header .settings {
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    cursor: pointer;
+}
+ 
+.header .logo {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header #searchgames {
+    position: absolute;
+    top: 2%;
+    left: 90%;
+    transform: translateX(-90%);
+    font-size: 20px;
+    text-indent: 5px;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/************ Cards ************/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards .card {
+    height: 400px;
+    width: 300px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.cards .card .game-image {
+    width: 300px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 5px solid #000000;
+}
+
+.cards .card .game-link {
+    position: relative;
+    top: 20%;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+}

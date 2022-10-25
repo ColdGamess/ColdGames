@@ -1,0 +1,42 @@
+:root {
+    --text-color: #000000;
+    --settings-bg: #ffffff;
+    --toggle-switch: #000000;
+}
+
+body.dark {
+    --text-color: #ffffff;
+    --settings-bg: #000000;
+    --toggle-switch: #ffffff;
+}
+
+.toggle-particles {
+    width: 110px;
+    height: 40px;
+    border: 2px solid var(--toggle-switch);
+    border-radius: 25px;
+    position: absolute;
+    top: 56%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-particles::before {
+    content: "";
+    position: absolute;
+    border: 2px solid var(--toggle-switch);
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.toggle-particles.enabled::before {
+    left: calc(100% - 30px - 8px);
+    background-color: var(--settings-bg);
+}
